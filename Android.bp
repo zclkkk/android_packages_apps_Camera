@@ -1,0 +1,46 @@
+android_app {
+    name: "Camera",
+    overrides: ["Camera2"],
+
+    manifest: "app/src/main/AndroidManifest.xml",
+
+    resource_dirs: [
+        "app/src/main/res",
+        "app/src/main/res_aosp",
+    ],
+
+    srcs: [
+        "app/src/main/java/**/*.java",
+        "app/src/main/java/**/*.kt",
+        "app/src/main/java_aosp/**/*.java",
+    ],
+
+    system_ext_specific: true,
+
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "androidx.camera_camera-camera2",
+        "androidx.camera_camera-core",
+        "androidx.camera_camera-extensions",
+        "androidx.camera_camera-lifecycle",
+        "androidx.camera_camera-video",
+        "androidx.camera_camera-view",
+        "androidx.concurrent_concurrent-futures",
+        "androidx.documentfile_documentfile",
+        "androidx.exifinterface_exifinterface",
+        "androidx.lifecycle_lifecycle-livedata",
+        "androidx.databinding_viewbinding",
+        "androidx-constraintlayout_constraintlayout",
+        "com.google.android.material_material",
+        "com.google.zxing_core",
+        "guava",
+        "kotlin-annotations",
+    ],
+
+    platform_apis: true,
+
+    enforce_uses_libs: false,
+    dex_preopt: {
+        enabled: false,
+    },
+}
