@@ -13,6 +13,7 @@ android_app {
         "app/src/main/java/**/*.java",
         "app/src/main/java/**/*.kt",
         "app/src/main/java_aosp/**/*.java",
+        "app/src/main/databinding/**/*.java",
     ],
 
     system_ext_specific: true,
