@@ -39,6 +39,11 @@ android_app {
     ],
     jni_libs : ["libimage_processing_util_jni"],
 
+    aaptflags: [
+        "--rename-manifest-package",
+        "ink.kaleidoscope.camera",
+    ],
+
     platform_apis: true,
 
     enforce_uses_libs: false,

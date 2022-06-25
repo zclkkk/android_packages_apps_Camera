@@ -37,7 +37,7 @@ android {
     buildToolsVersion = "32.0.0"
 
     defaultConfig {
-        applicationId = "app.grapheneos.camera"
+        applicationId = "ink.kaleidoscope.camera"
         minSdk = 29
         targetSdk = 32
         versionCode = 43
